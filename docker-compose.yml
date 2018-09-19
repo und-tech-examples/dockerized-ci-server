@@ -1,0 +1,21 @@
+version: '3'
+services:
+  jenkins:
+    image: undcomercio/ci-server
+    build:
+      context: ./docker
+    container_name: jenkins
+    user: root
+    privileged: true
+    environment:
+      - USER_ID=1000
+      - GROUP_ID=1000
+      - DOCKER_USER=0:0
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+      - ./jenkins_home/:/var/jenkins_home/:rw
+      - ~/.aws:/root/.aws
+    ports:
+      - 8080:8080
+      - 50000:50000

@@ -1,0 +1,9 @@
+scm-api:latest
+git-client:latest
+git:latest
+greenballs:latest
+blueocean:latest
+scm-filter-branch-pr:latest
+pipeline-utility-steps:latest
+slack:latest
+build-user-vars-plugin:latest
