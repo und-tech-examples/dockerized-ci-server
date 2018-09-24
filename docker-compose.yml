@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   jenkins:
     image: undcomercio/ci-server
@@ -13,7 +13,7 @@ services:
       - DOCKER_USER=0:0
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /usr/bin/docker:/usr/bin/docker
+      - ${VOLUME_DOCKER}:/usr/bin/docker
       - ./jenkins_home/:/var/jenkins_home/:rw
       - ~/.aws:/root/.aws
     ports:
