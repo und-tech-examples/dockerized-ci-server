@@ -7,3 +7,13 @@ scm-filter-branch-pr:latest
 pipeline-utility-steps:latest
 slack:latest
 build-user-vars-plugin:latest
+ldap:latest
+pipeline-stage-view:latest
+pipeline-github-lib:latest
+workflow-aggregator:latest
+github-branch-source:latest
+subversion:latest
+pam-auth:latest
+ssh-slaves:latest
+mailer:latest
+email-ext:latest
