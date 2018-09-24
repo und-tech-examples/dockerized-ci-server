@@ -17,5 +17,5 @@ services:
       - ./jenkins_home/:/var/jenkins_home/:rw
       - ~/.aws:/root/.aws
     ports:
-      - 8080:8080
+      - 9090:8080
       - 50000:50000
