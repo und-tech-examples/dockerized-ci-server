@@ -16,6 +16,7 @@ services:
       - ${VOLUME_DOCKER}:/usr/bin/docker
       - ./jenkins_home/:/var/jenkins_home/:rw
       - ~/.aws:/root/.aws
+      - ~/.ssh:/root/.ssh
     ports:
       - 9090:8080
       - 50000:50000
