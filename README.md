@@ -19,6 +19,8 @@ docker-compose build
 make up
 ```
 
+Ir a http://localhost:9090
+
 ## Configurar para macOS
 
 user@docker.for.mac.localhost:/ruta_de_tu_proyecto/nombre_de_tu_proyecto
